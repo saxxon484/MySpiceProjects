@@ -1,0 +1,22 @@
+* C:\Users\Emre\Desktop\Emre\SPICE projects\Projects\Tube stuff\12AX7 model\12AX7_replica.asc
+V1 gk 0 V
+V2 ak 0 V
+B1 N002 0 V=0.0000412594*(V(in)+61.564)*(V(in)+211.174)*0.001
+R1 N002 0 1
+B2 inbefore 0 V=V(ak)+V(gk)*100
+D1 N003 inmid 1N914
+D2 N005 0 1N914
+R2 N003 N005 1k
+R3 N004 N005 1k
+V3 N004 0 5
+R4 inmid 0 10k
+B3 N003 0 V=V(inbefore)*0.1
+B4 in 0 V=V(inmid)*10
+B5 N001 0 V=pow(V(inbefore),1.5)*0.000001
+R5 N001 0 1
+.model D D
+.lib C:\Users\Emre\Documents\LTspiceXVII\lib\cmp\standard.dio
+.dc V2 0 500 10 V1 0 -5 -0.5
+* this polynomial was found by curve fit
+.backanno
+.end
