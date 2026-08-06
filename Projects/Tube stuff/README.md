@@ -6,3 +6,6 @@
 
 ## Websites for tube transfer curvatures
 * [Transfer curvature](http://www.lynx.net/~jc/transferCurvature-TubeSimulation.html)
+
+## Websites for datasheets
+* [12AX7](https://frank.pocnet.net/sheets/093/1/12AX7A.pdf)
